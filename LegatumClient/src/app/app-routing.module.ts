@@ -20,89 +20,89 @@ import { LoginComponent } from './login/login.component';
 import { AdminChatComponent } from './adminpage/admin-chat/admin-chat.component';
 
 const appRoutes: Routes = [
-    {
-      path: 'home',
-      component: HomeComponent,
-      data: { someShizz: 'some interesting data' }
-    },
-    {
-      path: 'dashboard', // potentially add user url param
-      component: DashboardComponent,
-      canActivate: [ AuthGuardService ],
-      children: [
-        {
-          path: '',
-          children: [
-            {
-              path: 'my-contracts',
-              component: MyContractsComponent
-            },
-            {
-              path: 'contract-details/:contract-nickname',
-              component: ContractDetailsComponent
-            },
-            {
-              path: 'create-contract',
-              component: ContractFormComponent
-            },
-            {
-              path: 'review-contract',
-              component: ReviewContractComponent
-            },
-            {
-              path: '',
-              redirectTo: 'my-contracts', pathMatch: 'full'
-            },
-            /* @@Admin SubPage@@ */
-            {
-              path: 'admin',
-              component: AdminComponent,
-              data: { someShizz: 'some interesting data' },
-              children: [
-                {
-                  path: '',
-                  children: [
-                    {
-                      path: 'deploy/:contract-id',
-                      component: DeployContractsComponent
-                    },
-                    {
-                      path: 'pending',
-                      component: PendingContractsComponent
-                    },
-                    {
-                      path: 'admin-chat',
-                      component: AdminChatComponent
-                    }
-                  ]
-                }
-              ]
-            },
-          ]
-        },
-      ]
-    },
-  
-  
-    {
-      path: '**',
-      redirectTo: 'home', pathMatch: 'full'
-    },
-    {
-      path: '',
-      redirectTo: 'home', pathMatch: 'full'
-    }
+  {
+    path: 'home',
+    component: HomeComponent,
+    data: { someShizz: 'some interesting data' }
+  },
+  {
+    path: 'dashboard', // potentially add user url param
+    component: DashboardComponent,
+    canActivate: [AuthGuardService],
+    children: [
+      {
+        path: '',
+        children: [
+          {
+            path: 'my-contracts',
+            component: MyContractsComponent
+          },
+          {
+            path: 'contract-details/:contract-nickname',
+            component: ContractDetailsComponent
+          },
+          {
+            path: 'create-contract',
+            component: ContractFormComponent
+          },
+          {
+            path: 'review-contract',
+            component: ReviewContractComponent
+          },
+          {
+            path: '',
+            redirectTo: 'my-contracts', pathMatch: 'full'
+          },
+          /* @@Admin SubPage@@ */
+          {
+            path: 'admin',
+            component: AdminComponent,
+            data: { someShizz: 'some interesting data' },
+            children: [
+              {
+                path: '',
+                children: [
+                  {
+                    path: 'deploy/:contract-id',
+                    component: DeployContractsComponent
+                  },
+                  {
+                    path: 'pending',
+                    component: PendingContractsComponent
+                  },
+                  {
+                    path: 'admin-chat',
+                    component: AdminChatComponent
+                  }
+                ]
+              }
+            ]
+          },
+        ]
+      },
+    ]
+  },
+
+
+  {
+    path: '**',
+    redirectTo: 'home', pathMatch: 'full'
+  },
+  {
+    path: '',
+    redirectTo: 'home', pathMatch: 'full'
+  }
 ];
 
 @NgModule({
-    imports: [
-        RouterModule.forRoot(
-            appRoutes,
-            {  useHash: true } // <-- debugging purposes only
-        ),
-    ],
-    exports: [
-        RouterModule
-    ]
+  imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { useHash: true } // <-- debugging purposes only
+    ),
+  ],
+  exports: [
+    RouterModule
+  ]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
