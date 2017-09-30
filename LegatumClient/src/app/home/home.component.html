@@ -1,89 +1,97 @@
 <div class="row">
-<div [mnFullpage]="options" [mnFullpageNavigation]="true">
-  <div class="fp-section fp-table">
-    <h1>
-      LEGATUM
-    </h1>
-    <div class="menu">
-      <ul class="nav">
-
-        <!-- Load a conditional dashboard button -->
-        <li><a *ngIf="this.isLoggedIn" routerLink="/dashboard"><span id="nav-button">Dashboard</span></a>
-          <!--     <li><a *ngIf="this.isLoggedIn" [routerLink]="['/dashboard', urlParam]"><span id="nav-button">Dashboard</span></a>       -->
-          <li><a *ngIf="!this.isLoggedIn" (click)="handleLogin()"><span id="nav-button">login</span></a>
-            <li><a *ngIf="!this.isLoggedIn" (click)="handleRegister()"><span id="nav-button">Signup</span></a>
-              <li><a>Menu</a>
-                <ul class="drop-menu">
-                  <li><a a href="#section-two">Ethereum</a></li>
-                  <li><a a href="#section-three">Our Team</a></li>
-                  <li><a a href="#section-four">Contact</a></li>
-                </ul>
-              </li>
-      </ul>
-    </div>
-    <div class="fp-tableCell section-one">
-      <div class="homelogodiv">
-        <img class="homelogo" src="../../assets/legatumwhite.png">
+  <div [mnFullpage]="options" [mnFullpageNavigation]="true">
+    <div class="fp-section fp-table">
+      <h1>
+        LEGATUM
+      </h1>
+      <div class="menu">
+        <ul class="nav">
+          <!-- Load a conditional dashboard button -->
+          <li><a *ngIf="this.isLoggedIn" routerLink="/dashboard"><span id="nav-button">Dashboard</span></a>
+            <!--     <li><a *ngIf="this.isLoggedIn" [routerLink]="['/dashboard', urlParam]"><span id="nav-button">Dashboard</span></a>       -->
+            <li><a *ngIf="!this.isLoggedIn" (click)="handleLogin()"><span id="nav-button">login</span></a>
+              <li><a *ngIf="!this.isLoggedIn" (click)="handleRegister()"><span id="nav-button">Signup</span></a>
+                <li><a>Menu</a>
+                  <ul class="drop-menu">
+                    <li><a a href="#section-two">Ethereum</a></li>
+                    <li><a a href="#section-three">Our Team</a></li>
+                    <li><a a href="#section-four">Contact</a></li>
+                  </ul>
+                </li>
+        </ul>
       </div>
-      <h2 class="homeintro">Protect your legacy</h2>
-    </div>
-  </div>
+      
 
-  <div class="fp-section fp-table">
-    <div class="fp-tableCell section-two">
-      <div class="ethlogodiv">
-        <img class="ethlogo" src="../../assets/ETHEREUM-ICON_Black.png">
+      <div class="fp-tableCell section-one">
+        <div class="homelogodiv">
+          <img class="homelogo responsive-img" src="../../assets/legatumwhite.png">
+        </div>
+        <h2 class="homeintro">Protect your legacy</h2>
       </div>
-      <h3>What Are Smart Contracts?</h3>
-      <div class="about-section">
-        <p>
-          Uploading, securing and stamping your most precious legal-documents to the Ethereum Network.
+    </div>
+
+
+    <div class="fp-section fp-table">
+      <div class="fp-tableCell section-two">
+        <div class="ethlogodiv">
+          <img class="ethlogo" src="../../assets/ETHEREUM-ICON_Black.png">
+        </div>
+        <h3>What Are Smart Contracts?</h3>
+        <div class="about-section">
+          <p>
+            Uploading, securing and stamping your most precious legal-documents to the Ethereum Network.
+          </p>
+        </div>
+        <p class="main-pitch">
+          Contracts, by definition, are legally binding agreements between two or more persons/parties with the intention of exchanging
+          goods and services. Without a doubt, the execution of any agreed upon terms relies solely upon trust. However,
+          trust often fails those even with the best of intentions, leading to fraud, extortion and gruesome legal battles
+          costing thousands of dollars or even worse in the case of bequeathment disputes: family relationships.
+          <br>
+          <br> Thus, those of us at Legatum seek to remove the fallible element of human trust from the execution of Wills.
+          Ethereum, a blockchain technology platform, employs the use of "Smart Contracts" which upload your encrypted Will
+          of choice into a body of Solidity (Ethereum's programming language) code. Then, your Will and its contents are
+          exported to Ethereum's distributed public-ledger, where any and all changes to every "Smart Contract" ever created
+          are visible for the world to see. Your data however, will be safely "hashed" into a format illegible to humans
+          and can be retrieved for you to view or verify in the case of a passing in your family. We strive for a world without
+          greedy family members appearing with a 'Hidden Will' or forcing the hand of a vulnerable elder.
         </p>
       </div>
-      <p class="main-pitch">
-        Contracts, by definition, are legally binding agreements between two or more persons/parties with the intention of exchanging goods 
-        and services. Without a doubt, the execution of any agreed upon terms relies solely upon trust. However, trust often fails those 
-        even with the best of intentions, leading to fraud, extortion and gruesome legal battles costing thousands of dollars or even worse
-        in the case of bequeathment disputes: family relationships. 
-        <br>
-        <br> Thus, those of us at Legatum seek to remove the fallible element of human trust from the execution of Wills. Ethereum, a blockchain
-        technology platform, employs the use of "Smart Contracts" which upload your encrypted Will of choice into a body of Solidity 
-        (Ethereum's programming language) code. Then, your Will and its contents are exported to Ethereum's distributed public-ledger, where any and all 
-        changes to every "Smart Contract" ever created are visible for the world to see. Your data however, will be safely "hashed" into a format illegible to humans
-        and can be retrieved for you to view or verify in the case of a passing in your family. We strive for a world without greedy family 
-        members appearing with a 'Hidden Will' or forcing the hand of a vulnerable elder. 
-      </p>
     </div>
-  </div>
 
-  <div class="fp-section fp-table">
-    <div class="fp-tableCell section-three">
-      <div class="whoweare">
+
+    <div class="fp-section fp-table">
+      <div class="fp-tableCell section-three">
+        <div class="whoweare">
           <h3 class="team-header">Meet the Team</h3>
-      </div>
-      <br>
-      <br>
-      <br>
-      <div class="profile-grid">
-        <div class="card">
-          <h4 class="header-name">Michael Doyle</h4>
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="../../assets/MikeDoyle.jpeg">
-            </div>
-            <div class="card-content">
-              <span class="btn-floating activator waves-effect waves-light pulse #ea80fc purple accent-1"><i class="material-icons">add</i></span>
-              <p class="intro-reveal-text">Here is some more information about the one they... Click To Expand</p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Michael Doyle<i class="material-icons right">close</i></span>
-              <p class="card-reveal-text">Here is some more information about the one they call Michael Doyle.</p>
-            </div>
-            <div class="card-action">
-                <p class="link-text1"><a class="link-text1" href="https://github.com/mikedoyle007">GitHub</a></p><p class="link-text2"><a class="link-text2" href="https://www.linkedin.com/in/mikedoyle007/">LinkedIn</a></p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col s3">
+            <div class="card">
+              <h4 class="header-name">Michael Doyle</h4>
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="../../assets/MikeDoyle.jpeg">
+              </div>
+              <div class="card-content">
+                <span class="btn-floating activator waves-effect waves-light pulse #ea80fc purple accent-1"><i class="material-icons">add</i></span>
+                <p class="intro-reveal-text">Here is some more information about the one they... Click To Expand</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Michael Doyle<i class="material-icons right">close</i></span>
+                <p class="card-reveal-text">Here is some more information about the one they call Michael Doyle.</p>
+              </div>
+              <div class="card-action">
+                <p class="link-text1"><a class="link-text1" href="https://github.com/mikedoyle007">GitHub</a></p>
+                <p class="link-text2"><a class="link-text2" href="https://www.linkedin.com/in/mikedoyle007/">LinkedIn</a></p>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <h4 class="header-name">  Tony    Head</h4>
+          <div class="col s3">
+            <div class="card">
+              <h4 class="header-name">  Tony   Head</h4>
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="../../assets/tonyHead.png">
               </div>
@@ -96,29 +104,38 @@
                 <p class="card-reveal-text">Here is some more information about the one they call Tony Head.</p>
               </div>
               <div class="card-action">
-                  <p class="link-text1"><a class="link-text1" href="https://github.com/tonymichaelhead">GitHub</a></p><p class="link-text2"><a class="link-text2" href="https://www.linkedin.com/in/tonymichaelhead/">LinkedIn</a></p>
+                <p class="link-text1"><a class="link-text1" href="https://github.com/tonymichaelhead">GitHub</a></p>
+                <p class="link-text2"><a class="link-text2" href="https://www.linkedin.com/in/tonymichaelhead/">LinkedIn</a></p>
               </div>
+            </div>
           </div>
-          <div class="card">
-            <h4 class="header-name">James Knippel</h4>
+          <div class="col s3">
+            <div class="card">
+              <h4 class="header-name">James Knippel</h4>
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="../../assets/jamesKnippel.jpeg">
               </div>
               <div class="card-content">
                 <span class="btn-floating activator waves-effect waves-light pulse #ea80fc purple accent-1"><i class="material-icons">add</i></span>
-                <p class="intro-reveal-text">Somebody once told me the world is gonna roll me I ain't the... Click To Expand</p>
+                <p class="intro-reveal-text">Salutations. I'm a Full-Stack Software Engineer with a serious love for blockchains...</p>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">James Knippel<i class="material-icons right">close</i></span>
-                <p class="card-reveal-text">Salutations. I'm a Full-Stack Software Engineer with a serious love for blockchains, Space, and any technologies that directly contribute to the advancement of humanity. You'll often find me fueling my desire for self-improvement by delving into the frightening unknown and architecting solutions to seemingly insurmountable problems in various avenues of activity, whether it be in the work environment, or during a do-it-yourself construction project. 
-                  I may also have a 'knack' for cycling, see you on the road or on the trails!</p>
+                <p class="card-reveal-text">Salutations. I'm a Full-Stack Software Engineer with a serious love for blockchains, Space, and any technologies
+                  that directly contribute to the advancement of humanity. You'll often find me fueling my desire for self-improvement
+                  by delving into the frightening unknown and architecting solutions to seemingly insurmountable problems
+                  in various avenues of activity, whether it be in the work environment, or during a do-it-yourself construction
+                  project. I may also have a 'knack' for cycling, see you on the road or on the trails!</p>
               </div>
               <div class="card-action">
-                  <p class="link-text1"><a class="link-text1" href="https://github.com/JamesKnippel">GitHub</a></p><p class="link-text2"><a class="link-text2" href="https://www.linkedin.com/in/jamesknippel/">LinkedIn</a></p>
+                <p class="link-text1"><a class="link-text1" href="https://github.com/JamesKnippel">GitHub</a></p>
+                <p class="link-text2"><a class="link-text2" href="https://www.linkedin.com/in/jamesknippel/">LinkedIn</a></p>
               </div>
+            </div>
           </div>
-          <div class="card">
-            <h4 class="header-name">Aren Rostamian</h4>
+          <div class="col s3">
+            <div class="card">
+              <h4 class="header-name">Aren Rostamian</h4>
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="../../assets/arenRostamian.jpeg">
               </div>
@@ -131,71 +148,72 @@
                 <p class="card-reveal-text">Here is some more information about the one they call Aren Rostamian.</p>
               </div>
               <div class="card-action">
-                  <p class="link-text1"><a class="link-text1" href="https://github.com/arenrostamian">GitHub</a></p><p class="link-text2"><a class="link-text2" href="https://www.linkedin.com/in/arenrostamian/">LinkedIn</a></p>
+                <p class="link-text1"><a class="link-text1" href="https://github.com/arenrostamian">GitHub</a></p>
+                <p class="link-text2"><a class="link-text2" href="https://www.linkedin.com/in/arenrostamian/">LinkedIn</a></p>
               </div>
+            </div>
           </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="fp-section fp-table section-four">
-    <div class="fp-tableCell">
-      <div class="get-started" (click)="handleLogin()">
-        <div class="front">
-          Get Started
-        </div>
-        <div class="back">
-          Get Started
         </div>
       </div>
-      <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">NOTICE</h5>
-              <p class="grey-text text-lighten-4">Legatum is currently still in its Alpha phase, many updates and tweaks are expected to come!</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Powered By:</h5>
-              <ul>
-                <li class="powered-by-li"><img class="footer-logo-one" src="../../assets/rsz_ethereum-icon_black.png"><a class="grey-text text-lighten-3"
-                    href="https://ethereum.org/">Ethereum</a></li>
-                <li class="powered-by-li"><img class="footer-logo-one" src="../../assets/metamask.png"><a class="grey-text text-lighten-3" href="https://metamask.io/">Metamask</a></li>
-                <li><img class="footer-logo-one" src="../../assets/rsz_angularicon.png"><a class="grey-text text-lighten-3" href="https://angular.io/">Angular 4</a></li>
-                <li><img class="footer-logo-two" src="../../assets/rsz_1aws.png"><a class="grey-text text-lighten-3" href="https://aws.amazon.com/">Amazon Web Services</a></li>
-              </ul>
-            </div>
+    </div>
+
+
+    <div class="fp-section fp-table section-four">
+      <div class="fp-tableCell">
+        <div class="get-started" (click)="handleLogin()">
+          <div class="front">
+            Get Started
+          </div>
+          <div class="back">
+            Get Started
           </div>
         </div>
-        <div class="footer-copyright">
+        <footer class="page-footer">
           <div class="container">
-            © 2017 Legatum.io
-            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
-            <a class="grey-text text-lighten-4 contact-section" href="mailto:support@legatum.io" target="_top"><i class="material-icons email-icon">email</i>Contact Us</a>
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">NOTICE</h5>
+                <p class="grey-text text-lighten-4">Legatum is currently still in its Alpha phase, many updates and tweaks are expected to come!</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Powered By:</h5>
+                <ul>
+                  <li class="powered-by-li"><img class="footer-logo-one" src="../../assets/rsz_ethereum-icon_black.png"><a class="grey-text text-lighten-3"
+                      href="https://ethereum.org/">Ethereum</a></li>
+                  <li class="powered-by-li"><img class="footer-logo-one" src="../../assets/metamask.png"><a class="grey-text text-lighten-3" href="https://metamask.io/">Metamask</a></li>
+                  <li><img class="footer-logo-one" src="../../assets/rsz_angularicon.png"><a class="grey-text text-lighten-3"
+                      href="https://angular.io/">Angular 4</a></li>
+                  <li><img class="footer-logo-two" src="../../assets/rsz_1aws.png"><a class="grey-text text-lighten-3" href="https://aws.amazon.com/">Amazon Web Services</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </footer>
+          <div class="footer-copyright">
+            <div class="container">
+              © 2017 Legatum.io
+              <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+              <a class="grey-text text-lighten-4 contact-section" href="mailto:support@legatum.io" target="_top"><i class="material-icons email-icon">email</i>Contact Us</a>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   </div>
-</div>
-<particles [style]="myStyle" [width]="width" [height]="height" [params]="myParams"></particles>
+  <particles [style]="myStyle" [width]="width" [height]="height" [params]="myParams"></particles>
 
+  <div>
+    <!-- <a id="menu" class="waves-effect waves-light btn red" *ngIf="!chatInitiated"  (click)="openChat()">Chat</a> -->
+    <button id="menu" class="waves-effect waves-light btn btn-floating"><i (click)="openChat($event)"class="material-icons">menu</i></button>
 
+    <app-chat></app-chat>
 
-
-<div>
-  <!-- <a id="menu" class="waves-effect waves-light btn red" *ngIf="!chatInitiated"  (click)="openChat()">Chat</a> -->
-  <button id="menu" class="waves-effect waves-light btn btn-floating" ><i (click)="openChat($event)"class="material-icons">menu</i></button>
-  
-  <app-chat></app-chat> 
-  
-  <!-- Tap Target Structure -->
-  <div class="tap-target" id="hide" data-activates="menu">
-    <div class="tap-target-content">
-      <h5>Title</h5>
+    <!-- Tap Target Structure -->
+    <div class="tap-target" id="hide" data-activates="menu">
+      <div class="tap-target-content">
+        <h5>Title</h5>
+      </div>
     </div>
   </div>
-</div>  
 </div>
 
 <!-- Element Showed -->
@@ -204,8 +222,3 @@
 
 
 <!--  -->
-
-
-  
-
-    

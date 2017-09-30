@@ -1,18 +1,22 @@
 <div id="contract-preview">
-    <table>
+  <table>
+    <thead>
       <tr>
         <th>Contract Name</th>
-        <th>Contract ID</th> 
+        <th>Contract ID</th>
         <th>Date Created</th>
         <th>Status</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
         <td>{{contract.contract_nickname}}</td>
         <td>{{contract.contract_id}}</td>
         <td>{{contract.createdAt}}</td>
         <td>{{contract.pending ? 'submitted and pending' : 'approved'}}</td>
       </tr>
-    </table>
-    <a [routerLink]="['/dashboard/contract-details', contract.contract_nickname]" routerLinkActive="active" class="link" id="details-link" >Contract details</a> |
-    <a class="link" id="etherscan-link" href="https://ropsten.etherscan.io/tx/{{contract.hash}}">View on Etherscan</a>
+    </tbody>
+  </table>
+  <a [routerLink]="['/dashboard/contract-details', contract.contract_nickname]" routerLinkActive="active" class="link" id="details-link">Contract details</a>  |
+  <a class="link" id="etherscan-link" href="https://ropsten.etherscan.io/tx/{{contract.hash}}">View on Etherscan</a>
 </div>

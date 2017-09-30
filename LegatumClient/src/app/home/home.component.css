@@ -258,13 +258,12 @@ div.tap-target-wave::before {
     display: inline-block;
     right: 0;
 }
+
 .whoweare {
     text-align: center;
 }
 
 .card {
-    margin: auto;
-    width: 15%;
     opacity: 0.7;
     border-radius: 20px;
     border-width: thick;
