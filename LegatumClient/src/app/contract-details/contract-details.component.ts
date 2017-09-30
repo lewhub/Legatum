@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Contract } from '../models/contract/contract.interface';
 import { ActivatedRoute } from '@angular/router';
-import { DashboardService} from '../dashboard.service';
+import { DashboardService} from '../services/dashboard.service';
 
 @Component({
   selector: 'app-contract-details',

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Contract } from './models/contract/contract.interface';
-import { UserInfo } from './models/user-info/user-info.interface';
+import { Contract } from '../models/contract/contract.interface';
+import { UserInfo } from '../models/user-info/user-info.interface';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/share';

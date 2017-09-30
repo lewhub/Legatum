@@ -1,8 +1,8 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../services/auth.service';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Router, ActivatedRoute, RouterLinkActive } from '@angular/router';
-import { DashboardService } from '../dashboard.service';
+import { DashboardService } from '../services/dashboard.service';
 import { Observable } from 'rxjs/Observable';
 import { Contract } from '../models/contract/contract.interface';
 import { UserInfo } from '../models/user-info/user-info.interface';

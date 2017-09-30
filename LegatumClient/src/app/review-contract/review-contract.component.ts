@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router, ActivatedRoute } from '@angular/router'
 import { Contract } from '../models/contract/contract.interface';
-import { DashboardService } from '../dashboard.service';
+import { DashboardService } from '../services/dashboard.service';
 
 @Component({
   selector: 'app-review-contract',
