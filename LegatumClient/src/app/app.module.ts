@@ -22,8 +22,8 @@ import { SharedModule } from './component-modules/shared/shared.module';
 import { ParticlesModule } from 'angular-particle';
 import { MnFullpageModule } from 'ngx-fullpage';
 
-import { AuthGuardService } from './auth-guard.service';
-import { AuthService } from './auth.service';
+import { AuthGuardService } from './services/auth-guard.service';
+import { AuthService } from './services/auth.service';
 import { ReviewContractComponent } from './review-contract/review-contract.component';
 import { RegisterComponent } from './register/register.component';
 

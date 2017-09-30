@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../services/auth.service';
 import { RegisterComponent } from '../register/register.component';
 
 declare var swal: any;

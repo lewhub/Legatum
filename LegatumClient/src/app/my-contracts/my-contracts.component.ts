@@ -1,7 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { DashboardService } from '../dashboard.service';
-import { AuthService } from '../auth.service';
+import { DashboardService } from '../services/dashboard.service';
+import { AuthService } from '../services/auth.service';
 import { HttpClient, HttpParams } from '@angular/common/http';
 
 import { Observable } from 'rxjs/Observable';

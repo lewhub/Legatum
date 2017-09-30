@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { MdSidenavModule } from '@angular/material';
-import { DashboardService } from '../../dashboard.service';
+import { DashboardService } from '../../services/dashboard.service';
 import { AdminChatComponent } from '../admin-chat/admin-chat.component';
 // import { SocketIoModule, SocketIoConfig, Socket } from 'ng-socket-io';
 

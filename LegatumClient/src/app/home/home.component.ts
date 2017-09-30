@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { LoginComponent } from '../login/login.component';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../services/auth.service';
 import { RegisterComponent } from '../register/register.component';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MnFullpageOptions, MnFullpageService } from 'ngx-fullpage';
