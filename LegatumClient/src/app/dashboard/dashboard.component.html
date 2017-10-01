@@ -28,10 +28,8 @@
 </div> -->
 
 
-
-
 <nav class="nav-extended">
-    <particles class="particles"></particles>
+    
   <div class="nav-wrapper">
     <a routerLink="/home" class="brand-logo">LEGATUM</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -47,8 +45,11 @@
     </ul>
   </div>
 </nav>
-<div id="main-content">
-  <router-outlet></router-outlet>
+<particles class="particles"></particles>
+<!-- <div class="container">
+</div> -->
+<router-outlet></router-outlet>
+  
   <!-- <app-my-contracts *ngIf="showMyContracts"(onCreateFormClick)="onCreateFormClick($event)"></app-my-contracts>
   <app-contract-form *ngIf="createFormWasClicked"></app-contract-form> -->
-</div>
+
