@@ -22,8 +22,7 @@ import { AdminChatComponent } from './adminpage/admin-chat/admin-chat.component'
 const appRoutes: Routes = [
   {
     path: 'home',
-    component: HomeComponent,
-    data: { someShizz: 'some interesting data' }
+    component: HomeComponent
   },
   {
     path: 'dashboard', // potentially add user url param
