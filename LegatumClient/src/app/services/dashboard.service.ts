@@ -45,6 +45,7 @@ export class DashboardService {
   newContract: any = {
       username: this.userInfo.username,
       contract_nickname: 'default',
+      contract_id: 'default',
       will_text: 'default',
       file_name: 'No file was selected.',
       beneficiary: '1212dddddd3',
@@ -141,7 +142,7 @@ export class DashboardService {
       });
   }
 
-  retrieveUserInfoWithEmail(email:string): void {
+  retrieveUserInfoWithEmail(email: string): void {
     this.http.get ('findemail', {
       params: new HttpParams().set('email', email)
     })

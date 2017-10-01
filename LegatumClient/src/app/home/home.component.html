@@ -5,8 +5,8 @@
         <nav role="navigation">
           <div class="nav-wrapper purple darken-4">
             <a [routerLink]="['']" id="logo-container" class="brand-logo">LEGATUM</a>
-            <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
-            <ul class="right hide-on-sm-and-down">
+            <a href="#" data-activates="mobile-demo" class="button-collapse" (click)="sideNavOpen()"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
               <li><a *ngIf="this.isLoggedIn" routerLink="/dashboard"><span id="nav-button">Dashboard</span></a>
                 <li><a *ngIf="!this.isLoggedIn" (click)="handleLogin()"><span id="nav-button">Login</span></a>
                   <li><a *ngIf="!this.isLoggedIn" (click)="handleRegister()"><span id="nav-button">Signup</span></a>
@@ -18,7 +18,7 @@
                       </ul>
                     </li>
             </ul>
-            <!-- <ul class="side-nav" id="mobile-demo">
+            <ul class="side-nav" id="mobile-demo">
               <li><a *ngIf="this.isLoggedIn" routerLink="/dashboard"><span id="nav-button">Dashboard</span></a>
                 <li><a *ngIf="!this.isLoggedIn" (click)="handleLogin()"><span id="nav-button">login</span></a>
                   <li><a *ngIf="!this.isLoggedIn" (click)="handleRegister()"><span id="nav-button">Signup</span></a>
@@ -29,7 +29,7 @@
                         <li><a a href="#section-four">Contact</a></li>
                       </ul>
                     </li>
-            </ul> -->
+            </ul>
           </div>
         </nav>
       </div>
@@ -181,36 +181,37 @@
             Get Started
           </div>
         </div>
-        <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">NOTICE</h5>
-                <p class="grey-text text-lighten-4">Legatum is currently still in its Alpha phase, many updates and tweaks are expected to come!</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Powered By:</h5>
-                <ul>
-                  <li class="powered-by-li"><img class="footer-logo-one" src="../../assets/rsz_ethereum-icon_black.png"><a class="grey-text text-lighten-3"
-                      href="https://ethereum.org/">Ethereum</a></li>
-                  <li class="powered-by-li"><img class="footer-logo-one" src="../../assets/metamask.png"><a class="grey-text text-lighten-3" href="https://metamask.io/">Metamask</a></li>
-                  <li><img class="footer-logo-one" src="../../assets/rsz_angularicon.png"><a class="grey-text text-lighten-3"
-                      href="https://angular.io/">Angular 4</a></li>
-                  <li><img class="footer-logo-two" src="../../assets/rsz_1aws.png"><a class="grey-text text-lighten-3" href="https://aws.amazon.com/">Amazon Web Services</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-              © 2017 Legatum.io
-              <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
-              <a class="grey-text text-lighten-4 contact-section" href="mailto:support@legatum.io" target="_top"><i class="material-icons email-icon">email</i>Contact Us</a>
-            </div>
-          </div>
-        </footer>
+        
       </div>
     </div>
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">NOTICE</h5>
+              <p class="grey-text text-lighten-4">Legatum is currently still in its Alpha phase, many updates and tweaks are expected to come!</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Powered By:</h5>
+              <ul>
+                <li class="powered-by-li"><img class="footer-logo-one" src="../../assets/rsz_ethereum-icon_black.png"><a class="grey-text text-lighten-3"
+                    href="https://ethereum.org/">Ethereum</a></li>
+                <li class="powered-by-li"><img class="footer-logo-one" src="../../assets/metamask.png"><a class="grey-text text-lighten-3" href="https://metamask.io/">Metamask</a></li>
+                <li><img class="footer-logo-one" src="../../assets/rsz_angularicon.png"><a class="grey-text text-lighten-3"
+                    href="https://angular.io/">Angular 4</a></li>
+                <li><img class="footer-logo-two" src="../../assets/rsz_1aws.png"><a class="grey-text text-lighten-3" href="https://aws.amazon.com/">Amazon Web Services</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            © 2017 Legatum.io
+            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+            <a class="grey-text text-lighten-4 contact-section" href="mailto:support@legatum.io" target="_top"><i class="material-icons email-icon">email</i>Contact Us</a>
+          </div>
+        </div>
+      </footer>
   </div>
   <particles [style]="myStyle" [width]="width" [height]="height" [params]="myParams"></particles>
 

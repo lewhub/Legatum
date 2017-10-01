@@ -67,6 +67,10 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.register.registerUser();
   }
 
+  sideNavOpen () {
+    $('.button-collapse').sideNav();
+  }
+
   ngOnDestroy () {
     this.fullPageService.destroy('all');
     this.myParams['particles']['move']['enable'] = false;

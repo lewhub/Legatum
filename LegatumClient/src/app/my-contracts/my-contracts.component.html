@@ -1,7 +1,10 @@
 <h1 class="my-contracts-header"> CONTRACTS </h1>
-<app-contract-preview *ngFor="let contract of contracts"
-    [contract] = "contract">    
+<app-contract-preview *ngFor="let contract of contracts" [contract]="contract">
 </app-contract-preview>
-<a routerLink="/dashboard/create-contract" routerLinkActive="active">
-  <button md-raised-button class="create-button" (click)="handleCreateFormClick()">Create Contract</button>
-</a>
+
+<div class="row">
+  <a routerLink="/dashboard/create-contract" routerLinkActive="active" (click)="handleCreateFormClick()" class="waves-effect waves-light btn center col offset-s5 create-button">
+      <i class="material-icons left">mode_edit</i>
+      Create Contract
+    </a>
+</div>

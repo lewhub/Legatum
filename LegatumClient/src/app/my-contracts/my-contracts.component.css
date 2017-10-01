@@ -1,9 +1,7 @@
 .create-button {
     text-align: center;
-    margin-left: 45%;
-    display: inline;
-    border-radius: 5px;
-    font-weight: 350;
+    margin-bottom: 2%;
+    margin-top: 2%; 
     font-size: 12px;
     background: #6BDEB7;
     color: white;

@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, OnDestroy, EventEmitter, Output } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { DashboardService } from '../services/dashboard.service';
 import { AuthService } from '../services/auth.service';
@@ -14,7 +14,7 @@ import { Observer } from 'rxjs/Observer';
   styleUrls: ['./my-contracts.component.css']
 })
 
-export class MyContractsComponent implements OnInit {
+export class MyContractsComponent implements OnInit, OnDestroy {
 
   email: string = this.dashboardService.userInfo.email;
   name: string;
@@ -25,7 +25,8 @@ export class MyContractsComponent implements OnInit {
     {
       contractNickname: 'DEFAULT',
       contractId: 'DEFAULT',
-      createdAt: 'DEFAULT'
+      createdAt: 'DEFAULT',
+      contract: 'Null'
     }
   ];
 
@@ -46,7 +47,7 @@ export class MyContractsComponent implements OnInit {
   /* Tell the dashboardService to load itself with userInfo
   so that we can subscribe to it*/
   getUserInfo(): void {
-    this.dashboardService.getAndSetUserInfo();   
+    this.dashboardService.getAndSetUserInfo();
   }
 
     /* Tell the dashboardService to load itself with user's contracts
