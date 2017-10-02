@@ -24,6 +24,7 @@ import { MnFullpageModule } from 'ngx-fullpage';
 
 import { AuthGuardService } from './services/auth-guard.service';
 import { AuthService } from './services/auth.service';
+import { ParticlesService } from './services/particles.service';
 import { ReviewContractComponent } from './review-contract/review-contract.component';
 import { RegisterComponent } from './register/register.component';
 
@@ -70,7 +71,8 @@ const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
     MnFullpageModule.forRoot(),
     SocketIoModule.forRoot(config)
   ],
-  providers: [AuthGuardService, AuthService, AngularFireAuth, LoginComponent, RegisterComponent, ChatComponent, AdminChatComponent],
+  providers: [AuthGuardService, AuthService, AngularFireAuth, LoginComponent, RegisterComponent,
+    ChatComponent, AdminChatComponent, ParticlesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
