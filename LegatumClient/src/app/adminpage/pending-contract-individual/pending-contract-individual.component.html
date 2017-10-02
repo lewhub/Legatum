@@ -1,19 +1,23 @@
-<div id="contract-preview">
+<div id="contract-preview" class="container center-align">
   <table class="responsive-table">
-    <tr>
-      <th>Contract Nickname</th>
-      <th>Contract ID</th>
-      <th>Date Submitted</th>
-    </tr>
-    <tr>
-      <td>{{pendingContract.contract_nickname}}</td>
-      <td>{{pendingContract.contract_id}}</td>
-      <td>{{pendingContract.createdAt}}</td>
-    </tr>
+    <thead>
+      <tr>
+        <th>Contract Nickname</th>
+        <th>Contract ID</th>
+        <th>Date Submitted</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{pendingContract.contract_nickname}}</td>
+        <td>{{pendingContract.contract_id}}</td>
+        <td>{{pendingContract.createdAt}}</td>
+      </tr>
+    </tbody>
   </table>
   <a [routerLink]="['/dashboard/admin/deploy', pendingContract.contract_id]" routerLinkActive="active">
     <div id="create-button" (click)="handleCreateFormClick()">
-      Deploy Contract
+      DEPLOY THIS CONTRACT
     </div>
   </a>
 </div>

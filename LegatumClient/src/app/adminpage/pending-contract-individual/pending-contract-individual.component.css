@@ -1,19 +1,12 @@
 #contract-preview {
-  margin: 10px;
   padding: 5px;
   background-color: #fdfcff;
-  box-shadow: 2px 2px 5px #888888;
-  border-top: 4px solid gray;
+  box-shadow: 2px 1px 7px 1px #2EE7B9;
+  margin-top: 1%;
+  color: #000000;
   font-size: 11px;
 }
 
-table { 
-  margin: 10px;
-}
-
-td {
-  text-align: center;
-}
 
 .link {
   color: blue;
