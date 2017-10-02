@@ -159,6 +159,9 @@ ul li:hover ul li {
     to {opacity: 1;}
 }
 
+.nav {
+    z-index: 2;
+}
 
 #nav-button {
     color: white;
