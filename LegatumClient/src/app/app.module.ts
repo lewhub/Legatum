@@ -33,8 +33,6 @@ import { PendingContractsComponent } from './adminpage/pending-contracts/pending
 import { DeployContractsComponent } from './adminpage/deploy-contracts/deploy-contracts.component';
 import { PendingContractIndividualComponent } from './adminpage/pending-contract-individual/pending-contract-individual.component';
 import { ContractDetailsComponent } from './contract-details/contract-details.component';
-import { ChatComponent } from './chat/chat.component';
-import { AdminChatComponent } from './adminpage/admin-chat/admin-chat.component';
 
 const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
 
@@ -54,8 +52,6 @@ const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
     DeployContractsComponent,
     PendingContractIndividualComponent,
     ContractDetailsComponent,
-    ChatComponent,
-    AdminChatComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +68,7 @@ const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
     SocketIoModule.forRoot(config)
   ],
   providers: [AuthGuardService, AuthService, AngularFireAuth, LoginComponent, RegisterComponent,
-    ChatComponent, AdminChatComponent, ParticlesService],
+    ParticlesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
