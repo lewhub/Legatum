@@ -15,6 +15,23 @@ body {
     width: 100%;
 }
 
+/*
+  ====================================
+  Navbar logo and title
+  ====================================
+*/
+
+.nav-logo {
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 5px;  
+}
+
+.transparent {
+    background-color: transparent;
+}
+
 .page-footer {
     bottom: 0;
     width: 100%;
@@ -78,7 +95,6 @@ body {
     clear: both;
     font-size: 30px;
 }
-
 
 .homelogodiv{
     text-align: center;
