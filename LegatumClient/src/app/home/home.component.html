@@ -2,11 +2,14 @@
   <div [mnFullpage]="options" [mnFullpageNavigation]="true">
     <div class="fp-section fp-table">
         <particles [style]="myStyle" [width]="width" [height]="height" [params]="myParams"></particles>
+
       <div class="navbar-fixed nav">
-        <nav role="navigation">
-          <div class="nav-wrapper purple darken-4">
+        <nav class="transparent" role="navigation">
+          <div class="nav-wrapper darken-4">
+            <img class="nav-logo responsive-img" src="../../assets/legatumwhite.png">
             <a [routerLink]="['']" id="logo-container" class="brand-logo">LEGATUM</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse" (click)="sideNavOpen()"><i class="material-icons">menu</i></a>
+
+            <!-- <a href="#" data-activates="mobile-demo" class="button-collapse" (click)="sideNavOpen()"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a *ngIf="this.isLoggedIn" routerLink="/dashboard"><span id="nav-button">Dashboard</span></a>
                 <li><a *ngIf="!this.isLoggedIn" (click)="handleLogin()"><span id="nav-button">Login</span></a>
@@ -30,7 +33,7 @@
                         <li><a a href="#section-four">Contact</a></li>
                       </ul>
                     </li>
-            </ul>
+            </ul> -->
           </div>
         </nav>
       </div>
