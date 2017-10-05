@@ -87,7 +87,7 @@ body {
     text-align: center;
 }
 
-.team-header{
+.team-header {
     color: #B9B9B9;;
 }
 
@@ -103,22 +103,35 @@ body {
     font-size: 30px;
 }
 
-.homelogodiv{
+.homelogodiv {
     text-align: center;
 }
-.homelogo{
+.homelogo {
     opacity: .8;
 }
 
-.ethlogo{
+section {
+    float: left;
+    width: 63%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+}
+
+.ethlogo {
     height: 200px;
     align-items: center;
 }
-.ethlogodiv{
-    text-align: center;
+
+.ethlogodiv {
+    /* text-align: center; */
+    /* display: inline-block; */
+    /* float: right; */
 }
 
-.main-pitch  {
+.main-pitch {
     margin: 50px;
     text-align: center;
 }
