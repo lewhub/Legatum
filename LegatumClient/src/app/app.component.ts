@@ -1,7 +1,6 @@
 import { Component, Output } from '@angular/core';
 import { MnFullpageOptions } from 'ngx-fullpage';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,6 +12,8 @@ export class AppComponent {
     navigation: true,
     keyboardScrolling: true
   });
+
   loggedIn = false;
   title = 'Legatum';
 }
+
