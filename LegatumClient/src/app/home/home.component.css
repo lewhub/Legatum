@@ -10,6 +10,7 @@ h3 {
     text-transform: uppercase;
     text-align: center;
     color: #FCFCFC; 
+    letter-spacing: .3em;
 }
 body {
     width: 100%;
@@ -20,6 +21,10 @@ body {
   Navbar logo and title
   ====================================
 */
+
+#logo-container {
+    letter-spacing: .3em;
+}
 
 .nav-wrap {
     background-color: transparent;
@@ -32,11 +37,6 @@ body {
     vertical-align: middle;
     padding-left: 10px;
     padding-right: 5px;  
-}
-
-/* TESTING CLASS */
-.test {
-    background-color: white;
 }
 
 .page-footer {
@@ -77,9 +77,21 @@ body {
 }
 
 .section-two {
-    opacity: .6;
     z-index: auto;
     /* background-color: rgb(71, 36, 79); */
+    background-color: white;
+}
+
+#smart-contracts {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-27%, -50%);
+}
+
+#smart-contracts h3, #smart-contracts p {
+    color: black;
 }
 
 .about-header {
@@ -97,17 +109,18 @@ body {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    color: #B9B9B9;
+    /* color: #B9B9B9; */
     text-align: center;
     clear: both;
     font-size: 30px;
+    letter-spacing: .3em;
 }
 
 .homelogodiv {
     text-align: center;
 }
 .homelogo {
-    opacity: .8;
+    /* opacity: .8; */
 }
 
 section {
@@ -124,16 +137,25 @@ aside {
     width: 30%;
 }
 
+aside img {
+    text-align: center;
+}
+
 .flex {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
 }
 
 span .team-member {
     height: auto;
     width: auto;
     margin: 10px;
+    margin-top: 20px;
 }
 
 span img {
@@ -156,7 +178,7 @@ span h5 {
 }
 
 .ethlogo {
-    height: 200px;
+    height: 100vh;
     align-items: center;
 }
 
@@ -238,55 +260,36 @@ ul li:hover ul li {
 
 #nav-button:hover {
     /* color: #FE28A8; */
-    cursor: pointer; cursor: hand;
+    cursor: pointer;
 }
 
-.get-started {
+.front h3 {
+    margin-top: -70%;
     color: white;
-    font-size: 13px;
-    margin: auto;
-    width: 100px;
-    border-radius: 10%;
-    padding: 5;
-    text-transform: uppercase;
-    font-family: "Julius Sans One", sans-serif; 
-    transition: all .6s ease-in-out;
-    transform-style: preserve-3d;
-}
-
-.get-started:hover {
-    cursor: pointer; cursor: hand;
-    transform: rotateX(180deg);
-}
-
-.front, .back {
-    top: 0;
-    left: 0;
-    color: white;
-    font-size: 13px;
-    margin: auto;
-    width: 100px;
-    border: .5px solid white;
-    border-radius: 10%;
-    padding: 5px;
+    letter-spacing: .3em;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 15px;
     text-transform: uppercase;
     font-family: "Julius Sans One", sans-serif;
     backface-visibility: hidden;
 }
 
-.front:hover {
+.front h3:hover {
     color: #FE28A8;
     border-color: #FE28A8;
     background: rgba(0, 0, 0, 0.20);
+    cursor: pointer;
 }
 
-.back {
+/* .back {
     color: #FE28A8;
     border-color: #FE28A8;
     background: rgba(0, 0, 0, 0.20);
     transform: rotateX(180deg);
     left: 0;
-}
+} */
 
 .whoweare {
     text-align: center;
