@@ -4,7 +4,6 @@ import { AuthService } from '../services/auth.service';
 import { RegisterComponent } from '../register/register.component';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MnFullpageOptions, MnFullpageService } from 'ngx-fullpage';
-import { ChatComponent } from '../chat/chat.component';
 import { ParticlesService } from '../services/particles.service';
 
 declare var $: any;
@@ -15,8 +14,6 @@ declare var $: any;
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
-
-
 
   isLoggedIn: boolean = false;
   urlParam: string;
@@ -37,19 +34,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     private login: LoginComponent,
     private register: RegisterComponent,
     private fullPageService: MnFullpageService,
-    private chat: ChatComponent,
     private particles: ParticlesService) {
     }
-
-
-  // materialize
-  openChat(event): void {
-    // event.preventDefault();
-    $('.tap-target').tapTarget('open');
-    console.log('click event = ', event);
-    // $('.tap-target').tapTarget('close');
-  }
-
 
   // Check to see if user is logged in and if so display logged in features
   checkIfLoggedIn() {
@@ -87,6 +73,5 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.myParams = this.particles.myParams;
     this.myStyle = this.particles.myStyle;
   }
-
 
 }
