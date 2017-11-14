@@ -97,6 +97,8 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(
       appRoutes,
+      // enablingTracing: false
+      
       { useHash: true } // <-- debugging purposes only
     ),
   ],
